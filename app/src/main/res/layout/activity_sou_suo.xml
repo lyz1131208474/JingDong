@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.WoDe.DengLu.SouSuo.SouSuoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/bt_quxiao"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:button="@null"
+            android:textColor="#999999"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/search_edit2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_2"
+                android:hint="        雷士京东超级品牌日， 2件8折"
+                android:textSize="10sp"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_icon2"
+                android:layout_alignBottom="@id/search_edit2"
+                android:layout_alignLeft="@id/search_edit2"
+                android:layout_alignTop="@id/search_edit2"
+                android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/bt_search"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:button="@null"
+            android:textColor="#999999"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热搜"
+        android:textColor="#000"
+        android:layout_margin="10dp"/>
+
+    <com.fynn.fluidlayout.FluidLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl">
+    </com.fynn.fluidlayout.FluidLayout>
+
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <RadioButton
+        android:id="@+id/rb_clear"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@drawable/button_clean"
+        android:textColor="#999999"
+        android:text="清空历史搜索"/>
+</LinearLayout>
